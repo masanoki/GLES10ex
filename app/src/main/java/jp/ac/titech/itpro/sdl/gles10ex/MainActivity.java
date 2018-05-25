@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
 
     private Cube cube;
     private Pyramid pyramid;
+    private Octahedron octahedron;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
         renderer = new SimpleRenderer();
         cube = new Cube();
         pyramid = new Pyramid();
-        renderer.setObj(cube, 0, 0, 0);
+        octahedron = new Octahedron();
+        renderer.setObj(octahedron, 0, 0, 0);
         glView.setRenderer(renderer);
     }
 
